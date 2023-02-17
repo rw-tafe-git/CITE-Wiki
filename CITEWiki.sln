@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CITEWiki", "CITEWiki.csproj", "{C4BF6502-AE95-4E7C-9079-7BA556F3BE7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4BF6502-AE95-4E7C-9079-7BA556F3BE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4BF6502-AE95-4E7C-9079-7BA556F3BE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4BF6502-AE95-4E7C-9079-7BA556F3BE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4BF6502-AE95-4E7C-9079-7BA556F3BE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EACD48F-D758-4002-AE80-EF130E5E65C5}
+	EndGlobalSection
+EndGlobal

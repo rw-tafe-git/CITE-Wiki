@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CITEWiki", "CITEWiki\CITEWiki.csproj", "{AE9C427F-D310-46C2-A784-E64F33D29BB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CITEWiki", "SortingArray\CITEWiki.csproj", "{AE9C427F-D310-46C2-A784-E64F33D29BB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

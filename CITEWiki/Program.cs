@@ -1,4 +1,4 @@
-namespace SortingArray
+namespace CITEWiki
 {
     internal static class Program
     {

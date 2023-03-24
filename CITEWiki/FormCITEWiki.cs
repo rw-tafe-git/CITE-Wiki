@@ -100,18 +100,24 @@ namespace CITEWiki
         //9.4 - Create a DELETE button that removes all the information from a single entry of the array; the user must be prompted before the final deletion occurs,
         private void ButtonDelete_Click(object sender, MouseEventArgs e)
         {
-            //Set the DataTable's values to blank
-            DataTable[selectedRow, 0] = "~";
-            DataTable[selectedRow, 1] = " ";
-            DataTable[selectedRow, 2] = " ";
-            DataTable[selectedRow, 3] = " ";
 
-            ptr--;
-            DisplayTable();
-            ClearTextBoxes();
+            var resultAdd = MessageBox.Show("Are you sure you want to delete the entry?", "Delete entry", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            ButtonEdit.Enabled = false;
-            ButtonDelete.Enabled = false;
+            if (resultAdd == DialogResult.Yes)
+            {
+                //Set the DataTable's values to blank
+                DataTable[selectedRow, 0] = "~";
+                DataTable[selectedRow, 1] = " ";
+                DataTable[selectedRow, 2] = " ";
+                DataTable[selectedRow, 3] = " ";
+
+                ptr--;
+                DisplayTable();
+                ClearTextBoxes();
+
+                ButtonEdit.Enabled = false;
+                ButtonDelete.Enabled = false;
+            }
         }
 
         #endregion

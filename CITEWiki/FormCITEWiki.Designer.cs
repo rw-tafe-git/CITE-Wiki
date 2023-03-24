@@ -76,11 +76,10 @@
             this.ListViewProperties.Location = new System.Drawing.Point(277, 58);
             this.ListViewProperties.Name = "ListViewProperties";
             this.ListViewProperties.Size = new System.Drawing.Size(245, 319);
-            this.ListViewProperties.TabIndex = 1;
+            this.ListViewProperties.TabIndex = 11;
             this.ListViewProperties.UseCompatibleStateImageBehavior = false;
             this.ListViewProperties.View = System.Windows.Forms.View.Details;
-            this.ListViewProperties.SelectedIndexChanged += new System.EventHandler(this.ListViewProperties_SelectedIndexChanged);
-            this.ListViewProperties.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ListViewProperties_MouseClick);
+            this.ListViewProperties.Click += new System.EventHandler(this.ListViewProperties_Click);
             // 
             // ButtonEdit
             // 
@@ -88,7 +87,7 @@
             this.ButtonEdit.Location = new System.Drawing.Point(93, 12);
             this.ButtonEdit.Name = "ButtonEdit";
             this.ButtonEdit.Size = new System.Drawing.Size(75, 23);
-            this.ButtonEdit.TabIndex = 2;
+            this.ButtonEdit.TabIndex = 1;
             this.ButtonEdit.Text = "Edit";
             this.ButtonEdit.UseVisualStyleBackColor = true;
             this.ButtonEdit.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonEdit_Click);
@@ -99,7 +98,7 @@
             this.ButtonDelete.Location = new System.Drawing.Point(174, 12);
             this.ButtonDelete.Name = "ButtonDelete";
             this.ButtonDelete.Size = new System.Drawing.Size(75, 23);
-            this.ButtonDelete.TabIndex = 3;
+            this.ButtonDelete.TabIndex = 2;
             this.ButtonDelete.Text = "Delete";
             this.ButtonDelete.UseVisualStyleBackColor = true;
             this.ButtonDelete.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ButtonDelete_Click);
@@ -134,14 +133,14 @@
             this.TextBoxDefinition.Multiline = true;
             this.TextBoxDefinition.Name = "TextBoxDefinition";
             this.TextBoxDefinition.Size = new System.Drawing.Size(216, 171);
-            this.TextBoxDefinition.TabIndex = 7;
+            this.TextBoxDefinition.TabIndex = 8;
             // 
             // TextBoxSearch
             // 
             this.TextBoxSearch.Location = new System.Drawing.Point(277, 11);
             this.TextBoxSearch.Name = "TextBoxSearch";
             this.TextBoxSearch.Size = new System.Drawing.Size(164, 23);
-            this.TextBoxSearch.TabIndex = 8;
+            this.TextBoxSearch.TabIndex = 3;
             // 
             // ButtonOpen
             // 
@@ -151,15 +150,18 @@
             this.ButtonOpen.TabIndex = 9;
             this.ButtonOpen.Text = "Open";
             this.ButtonOpen.UseVisualStyleBackColor = true;
+            this.ButtonOpen.Click += new System.EventHandler(this.ButtonOpen_Click);
             // 
             // ButtonSave
             // 
+            this.ButtonSave.Enabled = false;
             this.ButtonSave.Location = new System.Drawing.Point(174, 415);
             this.ButtonSave.Name = "ButtonSave";
             this.ButtonSave.Size = new System.Drawing.Size(75, 23);
             this.ButtonSave.TabIndex = 10;
             this.ButtonSave.Text = "Save";
             this.ButtonSave.UseVisualStyleBackColor = true;
+            this.ButtonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
             // label2
             // 
@@ -193,7 +195,7 @@
             this.TextBoxStructure.Location = new System.Drawing.Point(94, 148);
             this.TextBoxStructure.Name = "TextBoxStructure";
             this.TextBoxStructure.Size = new System.Drawing.Size(155, 23);
-            this.TextBoxStructure.TabIndex = 16;
+            this.TextBoxStructure.TabIndex = 7;
             // 
             // label5
             // 
@@ -226,9 +228,9 @@
             this.Controls.Add(this.ListViewProperties);
             this.Controls.Add(this.ButtonAdd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormCITEWiki";
             this.Text = "Wiki Lookup";
-            this.Load += new System.EventHandler(this.FormCITEWiki_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

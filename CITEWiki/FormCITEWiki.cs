@@ -194,7 +194,7 @@ namespace CITEWiki
             }
             else
             {
-                //MessageBox.Show("Success: the item was found " + DataTable[foundIndex, 0]);
+                MessageBox.Show("Success: the item was found");
 
                 //Set the input textboxes to the datatables values of the found index
                 TextBoxName.Text = DataTable[foundIndex, 0];
